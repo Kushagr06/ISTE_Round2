@@ -7,8 +7,8 @@ function App() {
   return (
     <div className='bg-[rgb(34,34,34)] '>
       <Navbar />
-      {/* <Hero /> */}
-      <News />
+      <Hero />
+      {/* <News /> */}
     </div>
   
   );
