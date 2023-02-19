@@ -16,6 +16,9 @@ function Auth() {
             //window.location.href = './wrong'
             alert('Wrong Credentials')}
     }
+    function handleFpass(){
+        alert('Nothing we can do :)')
+    }
   return (
     <div className="Auth-form-container">
         <form className="Auth-form">
@@ -44,7 +47,7 @@ function Auth() {
                     
                 </div>
                 <p className="forgot-password text-right mt-2">
-                    Forgot <a href="#">Password?</a>
+                <a href="#" onClick={handleFpass}> Forgot Password?</a>
                 </p>
             </div>
         </form>
