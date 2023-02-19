@@ -12,7 +12,6 @@ function App() {
       <Navbar />
       {/* <Hero /> */}
       <News />
-      <Card />
 
       {/* <Footer /> */}
 

@@ -4,6 +4,7 @@
 @import '~mdb-ui-kit/css/mdb.min.css';
 .App {
   text-align: center;
+  overflow-x:hidden;
 }
 
 .App-logo {

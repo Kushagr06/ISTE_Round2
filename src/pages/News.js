@@ -61,15 +61,17 @@ function News() {
             className="flex grid p-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-24 lg:gap-36"
             style={{ marginLeft: "50vw", transform: "translateX(-54%)", width:'90vw' }}
           >
-      </div>
-      {data.map((item)=>{
+            {data.map((item)=>{
         x=item.title
         y=item.description
+
         
         console.log(x,y);
-        return <Card title={x} desc={y}/>
+        return <Card title={x} desc={y} link={item.link} img={item.image_url}/>
       })
     }
+      </div>
+      
     </div>
   )
 }
