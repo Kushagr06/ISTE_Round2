@@ -11,7 +11,12 @@ function App() {
     <div className='bg-[rgb(34,34,34)] '>
       <Navbar />
       {/* <Hero /> */}
+<<<<<<< HEAD
       <Bookmark />
+=======
+      <News />
+      <Card />
+>>>>>>> 739dc5b52c2a6513e2d20841e1a17492f914d6a3
 
       {/* <Footer /> */}
 
