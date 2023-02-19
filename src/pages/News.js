@@ -8,7 +8,7 @@ function News() {
   let x,y;
   const fetchData = async () => {
     try {
-      const response = await fetch('https://newsdata.io/api/1/news?apikey=pub_17493122d4d02067961b14974bbebdf3c1e90&q=cryptocurrency');
+      const response = await fetch('https://newsdata.io/api/1/news?apikey=pub_175178ea5ae73ceba773cfbd01235273f2d7b&q=cryptocurrency');
       
       const temp= await response.json();
       setData(temp.results);
