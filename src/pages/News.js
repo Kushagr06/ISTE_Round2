@@ -1,8 +1,29 @@
 import React from 'react';
 import './News.css';
-
+import { useEffect,useState } from 'react';
+import Card from '../components/Card';
 function News() {
-
+  const[data,setData]=useState();
+  let res;
+  const fetchData = async () => {
+    try {
+      const response = await fetch('https://newsdata.io/api/1/news?apikey=pub_17493122d4d02067961b14974bbebdf3c1e90&q=cryptocurrency');
+      const temp = await response.json();
+      setData(temp);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  function abc()
+  {
+    res=data.results;
+    res.map((item)=>{
+      console.log(item);
+    });
+  }
+  useEffect(() => {
+    fetchData();
+  },[])
   return (
     <div>
       <form className='pt-10'>
@@ -32,9 +53,15 @@ function News() {
             <button type="button" className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-3 py-2.5 text-center mr-2 mb-2">
               <a className="hover:text-gray-900">Entertainment</a>
             </button>
-</div>
+    </div>
 
-      </form>       
+      </form>
+      <div
+            className="flex grid p-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-24 lg:gap-36"
+            style={{ marginLeft: "50vw", transform: "translateX(-54%)", width:'90vw' }}
+          >
+      </div>
+       
     </div>
   )
 }
