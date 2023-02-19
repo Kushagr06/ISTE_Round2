@@ -1,6 +1,11 @@
 import React from 'react';
 import logo from './Orion.webp';
 import user from './user.jpg';
+import {Link} from 'react-router-dom';
+import Hero from '../pages/Hero';
+import News from '../pages/News';
+import Bookmark from '../pages/Bookmark';
+
 function Navbar() {
   return (
     <div className='z-10'>
@@ -13,13 +18,13 @@ function Navbar() {
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-between text-center align-bottom">
             <button type="button" className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-3 py-2.5 text-center mr-2 mb-2">
-              <a className="hover:text-gray-900">Home</a>
+              <Link className="hover:text-gray-900" to="/home">Home</Link>
             </button>
             <button type="button" className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-3 py-2.5 text-center mr-2 mb-2">
-              <a className="hover:text-gray-900">News</a>
+              <Link to="/news" className="hover:text-gray-900">News</Link>
             </button>
             <button type="button" className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-3 py-2.5 text-center mr-2 mb-2">
-              <a className=" hover:text-gray-900">Bookmarks</a>
+              <Link to="/bookmark" className=" hover:text-gray-900">Bookmarks</Link>
             </button>
           </nav>
           <div>
