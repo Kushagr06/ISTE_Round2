@@ -3,24 +3,25 @@ import './News.css';
 import { useEffect,useState } from 'react';
 import Card from '../components/Card';
 function News() {
-  const[data,setData]=useState();
-  let res;
+  const[data,setData]=useState([]);
+  let result;
+  let x,y;
   const fetchData = async () => {
     try {
       const response = await fetch('https://newsdata.io/api/1/news?apikey=pub_17493122d4d02067961b14974bbebdf3c1e90&q=cryptocurrency');
-      const temp = await response.json();
-      setData(temp);
+      
+      const temp= await response.json();
+      setData(temp.results);
     } catch (error) {
       console.log(error);
     }
   };
-  function abc()
-  {
-    res=data.results;
-    res.map((item)=>{
-      console.log(item);
-    });
-  }
+  // function abc(dataa)
+  // {
+
+  //   result=Object.keys(data)
+  //   console.log(result)
+  // }
   useEffect(() => {
     fetchData();
   },[])
@@ -61,7 +62,14 @@ function News() {
             style={{ marginLeft: "50vw", transform: "translateX(-54%)", width:'90vw' }}
           >
       </div>
-       
+      {data.map((item)=>{
+        x=item.title
+        y=item.description
+        
+        console.log(x,y);
+        return <Card title={x} desc={y}/>
+      })
+    }
     </div>
   )
 }
