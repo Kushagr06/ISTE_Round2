@@ -9,13 +9,13 @@ export default function Blimpg(){
   return(
     <>
 
-    <div className="flex w-full sm:h-80 h-96 pb-2 cursor-grab mt-5 justify-center">
-    <Canvas camera={{ position:[20,0,-30], zoom:3 ,fov:30, }}>
+    <div className="flex  sm:h-80 pb-2 cursor-grab justify-center w-full h-2/3" style={{height:"30vw"}}>
+    <Canvas flat linear camera={{ position:[20,-10,-90], zoom:3 ,fov:70, }}>
       <Stage>
       <Stars />
       <mesh>
         <pointLight position={[0,0,0]}/>
-      <Model scale={[0.2,0.2,0.2]} />
+      <Model scale={[5,5,5]} position={[-15,-10,10]}/>
         <OrbitControls />
       </mesh>
       </Stage>

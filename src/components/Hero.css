@@ -1,0 +1,18 @@
+#title_hero{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5vw;
+  margin: 0;
+  padding-bottom: 0.7rem;
+  letter-spacing: 0.5rem;
+  color: rgb(1,129,176);
+  transition: all 0.3s ease;
+  z-index: 3;
+  text-decoration: solid;
+  
+}
+
+#title_hero:hover {
+  transform: translate3d(0, -10px, 22px);
+  transition-duration: 250ms;
+  color: #FFFFFF;
+}

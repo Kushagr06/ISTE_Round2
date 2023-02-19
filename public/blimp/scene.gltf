@@ -3,24 +3,24 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 7208,
+      "count": 4176,
       "max": [
-        323.3529968261719,
-        105.3290023803711,
-        103.30799865722656
+        9.884435653686523,
+        11.255677223205566,
+        5.873965263366699
       ],
       "min": [
-        -351.0880126953125,
-        -150.15699768066406,
-        -107.3499984741211
+        -11.099089622497559,
+        1.1679942607879639,
+        -5.874392032623291
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 86496,
+      "byteOffset": 50112,
       "componentType": 5126,
-      "count": 7208,
+      "count": 4176,
       "max": [
         1.0,
         1.0,
@@ -36,53 +36,53 @@
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 7208,
+      "count": 4176,
       "max": [
-        0.9919000267982483,
-        -0.008129999972879887
+        0.9814061522483826,
+        0.9933969974517822
       ],
       "min": [
-        0.008100000210106373,
-        -0.9918699860572815
+        0.02190975472331047,
+        0.11377537250518799
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 7902,
+      "count": 10848,
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "IronEqual (https://sketchfab.com/ie-niels)",
+      "author": "SemB (https://sketchfab.com/SemBoekenoogen)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/blimp-from-poly-by-google-f375f48a4b704828a6e634c3745817a3",
-      "title": "Blimp from Poly by Google"
+      "source": "https://sketchfab.com/3d-models/blimp-enemy-3c10ff21c9b84ea8a067cf8b72ba3f2a",
+      "title": "Blimp Enemy"
     },
-    "generator": "Sketchfab-12.65.0",
+    "generator": "Sketchfab-12.64.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 31608,
+      "byteLength": 43392,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 57664,
-      "byteOffset": 31608,
+      "byteLength": 33408,
+      "byteOffset": 43392,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 172992,
-      "byteOffset": 89272,
+      "byteLength": 100224,
+      "byteOffset": 76800,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
@@ -90,29 +90,31 @@
   ],
   "buffers": [
     {
-      "byteLength": 262264,
+      "byteLength": 177024,
       "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/lambert1_baseColor.png"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
-      "name": "Cap_2",
+      "name": "lambert1",
       "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.8,
-          0.8,
-          0.8,
-          1.0
-        ],
+        "baseColorTexture": {
+          "index": 0
+        },
         "metallicFactor": 0.0,
-        "roughnessFactor": 0.969948
+        "roughnessFactor": 0.6
       }
     }
   ],
   "meshes": [
     {
-      "name": "Object_0",
+      "name": "Zeppelin_Boss_lambert1_0",
       "primitives": [
         {
           "attributes": {
@@ -156,41 +158,49 @@
       "children": [
         2
       ],
-      "name": "root"
-    },
-    {
-      "children": [
-        3
-      ],
       "matrix": [
         1.0,
         0.0,
         0.0,
         0.0,
         0.0,
-        2.220446049250313e-16,
+        0.0,
         1.0,
         0.0,
         0.0,
         -1.0,
-        2.220446049250313e-16,
+        0.0,
         0.0,
         0.0,
         0.0,
         0.0,
         1.0
       ],
-      "name": "GLTF_SceneRootNode"
+      "name": "bc538fe7036f4731bd3a1f0150fd2780.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
     },
     {
       "children": [
         4
       ],
-      "name": "node-0_0"
+      "name": "Zeppelin_Boss"
     },
     {
       "mesh": 0,
-      "name": "Object_4"
+      "name": "Zeppelin_Boss_lambert1_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
     }
   ],
   "scene": 0,
@@ -200,6 +210,12 @@
       "nodes": [
         0
       ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
     }
   ]
 }
