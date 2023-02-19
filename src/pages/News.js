@@ -65,7 +65,6 @@ function News() {
       {data.map((item)=>{
         x=item.title
         y=item.description
-        
         console.log(x,y);
         return <Card title={x} desc={y}/>
       })
